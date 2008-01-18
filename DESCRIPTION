@@ -1,0 +1,28 @@
+This is a program which starts other programs after some time
+# $Header$
+#
+# $Log$
+# Revision 1.1  2008-01-18 03:23:37  tino
+# First dist
+#
+
+Minicron is a tiny starter script, which starts another program or
+script after some time period.  It was optimized for size, not feature.
+
+To compile with diet, try "make static; strip minicron"
+
+Features are:
+<br>- Start a program after it was N minutes idle
+
+Planned extensions for future:
+<br>- SIGHUP: Shutdown program now
+<br>- SIGTERM: Shutdown program and terminate
+<br>- Kill a program after M minutes
+<br>- Maximum number of parallel processes
+<br>- Start a program each N minutes
+<br>- SIGUSR1: Start a program now
+<br>- SIGUSR2: Start another program now
+<br>- Redirect STDIN/OUT/ERR
+<br>- Chroot/user/whatever before exec
+<br>- Double guard (refork self).
+<br>- Load DLL, fork function of DLL.
